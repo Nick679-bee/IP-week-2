@@ -6,7 +6,42 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<body> 
+<body class="box" style="background-image: url(/image/images.jpeg);"> 
+    <div class="heading">
+        <h1>Your Akan Name</h1>
+    </div>
+    <div class="container">
+        <div class="mini">
+            <h2>Enter your details</h2>
+            <form name="enterform" class="form" onclick="validate();">
+            <div class="formbox">
+                <div>
+                    <label for="number">Year of birth:</label>
+                    <input type="number" class="formcont" id="year"> 
+                </div>
+                <div>
+                    <label for="month">Month of Birth</label>
+                    <input type="number" class="formcont" id="month">
+                </div>
+                <div>
+                    <label for="date">DOB</label>
+                    <input type="number" class="formcont" id="date">
+                </div>
+                <div>
+                    <label for="month">Gender</label><br>
+                    <div class="formcheck">
+                        <label class="formchecklable">
+                            <input type="radio" class="formradio" name="gender" id="male">&nbsp;male
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="primary" onclick="findName()"">Get Name</button>"
+            <br>
+            </form>
+            <p id="results"></p>
+        </div>
+    </div>
         
 
 
