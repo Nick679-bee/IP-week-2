@@ -8,7 +8,7 @@
 * Fork the repository from git hub on<a href ="https://github.com/Nick679-bee/IP-week-2.git">LINK</a>
 * Open link in the repository
 ## Known Bugs
-..
+Cannot find gender
 ## Technologies Used
 {The languages used are HTML,CSS and Javascript.}
 ## Support and contact details
