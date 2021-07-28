@@ -20,12 +20,10 @@ function validate() {
           else if( document.enterform.date.value == "" || isNaN( document.enterform.month.value ) || 
   document.enterform.month.value.length != 2|| document.enterform.date.value > 31 || document.enterform.date.value <= 0) {
      alert( "Not valid!" );
-     document.enterform.day.focus() ;
+     document.enterform.day.focus();
      }
 
-     else if(genders.checked==false && genders.checked==false ) {
-        alert("Must select one");
-        }
+     
 
         else{
          
@@ -99,4 +97,4 @@ function validate() {
           }
             function findName(){
                 dayValue = calculateDayValue();
-                getGender();}
+                getGender();}}}}}
