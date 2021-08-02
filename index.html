@@ -5,70 +5,69 @@
     <meta name="viewsport" content="width=device-with,initial scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 </head>
 <body class="box"> 
     <div class="heading">
         <h1>Your Akan Name.</h1>
     </div>
+    <p class="list"> Akan name generator chooses your name based on the day of the week you were born.
+        <ul class="list">
+            <li>Enter your date month and year you were born</li>
+            <li>Choose your gender</li>
+            <li>select "Generate name" and your Ghanian name will appear</li>
+        </ul>
     <div class="container">
         <div class="mini">
             <h2>Enter your details</h2>
-            <form name="enterform" class="form" onclick="validate();">
-            <div class="formbox">
-                <div>
-                    <label for="number">Year of birth:</label>
-                    <input type="number" class="formcont" id="year"> 
-                </div>
-                <div>
-                    <label for="month">Month of Birth</label>
-                    <input type="number" class="formcont" id="month">
-                </div>
-                <div>
-                    <label for="date">DOB</label>
-                    <input type="number" class="formcont" id="date">
-                </div>
-                <div>
-                    <label for="month">Gender</label><br>
-                    <div class="formcheck">
-                        <label class="formchecklable">
-                            <input type="radio" class="formradio" name="gender" id="male">&nbsp;male
-                            <input type="radio" class="formradio" name="gender" id="female">&nbsp;female
-                        </label>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 ">
+                        <div class="form-group">
+                            <label for="date of birth">Date of birth</label>
+                            <input class="" id="date" name="date" placeholder="MM/DD/YYY" type="date" />
+                        </div>
+                        <p class="content-heading">Gender</p>
+                        <div class="gender-select">
+                            <div>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                            </div>
+                            <br>
+                            <div><input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                        <br><br>
                     </div>
                 </div>
             </div>
-            <button type="submit" class="primary" onclick="findname()">Get Name</button>"
-            <br>
-            </form>
-            <p id="results"></p>
+        
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 ">
+                    <button type="button" class="btn btn-warning " name="submit" onclick="onSubmit()">Submit</button>
+                </div>
+                <div></div>
+        
+                </form>
+            <p id="display"></p>
         </div>
     </div>
-        
-
-
      <script src="./index.js"></script>
+     footer>
+        <strong>Contact</strong>
+        <li>Email:mwauranicholas10@gmail.com</li>
+        <li>Phone:07147400995</li>
+        <br><br>
+        <strong>Created by Nick Mwaura © 2021</strong>
+
 </body>
-
-
-
-
-
-
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
